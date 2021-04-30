@@ -1,0 +1,167 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="fonts/aller/ALLER.css"/>
+    <link rel="stylesheet" href="fonts/droid/droid.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <header class="header__conteiner">
+          <header class="logo"><img class="logo__img" src="img/logo.png" alt="logo" data-open="sll" oneclick="oneclick"/></header>
+          <input id="menu-checkbox" type="checkbox"/>
+          <nav role="navigation">
+            <label class="toggle-button" for="menu-checkbox" data-open="MENU" data-close="CLOSE" onclick="onclick"></label>
+            <ul class="main-menu">
+              <div class="nav__item" onclick="scrollDownH()" href="#">HOME</div>
+              <div class="nav__item" onclick="scrollDownS()" href="#">SERVICE </div>
+              <div class="nav__item" onclick="scrollDownP()" href="#">PORTFOLIO</div>
+              <div class="nav__item" onclick="scrollDownB()" href="#">ABOUT     </div>
+              <div class="nav__item" onclick="scrollDownB()" href="#">BLOG            </div>
+              <div class="nav__item" onclick="scrollDownC()" href="#">CONTACT</div>
+            </ul>
+          </nav>
+        </header>
+      </header>
+      <div class="conteiner">
+        <div class="slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="slider__imgg" src="img/slaider.jpg" alt="slider"/></div>
+            <div class="swiper-slide"><img class="slider__imgg" src="img/newname.jpg" alt="slider"/></div>
+          </div>
+          <div class="swiper-button-prev navigation-buttons"><img class="prev-img" src="img/Left-Arrow.png" alt=""/></div>
+          <div class="swiper-button-next navigation-buttons"><img class="next-img" src="img/Right-Arrow.png" alt=""/></div>
+        </div>
+        <div class="services">
+          <div class="services__content">
+            <div class="title">Our Services</div>
+            <div class="sevices__ss">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit</div>
+          </div>
+          <div class="services__btn">
+            <button class="services__slider__input" type="button" onmousedown="viewDiv()">Web Desin</button>
+            <button class="services__slider__input" type="button" onmousedown="viewDif()">Photography</button>
+            <button class="services__slider__input" type="button" onmousedown="viewDig()">Graphics</button>
+          </div>
+          <div class="sevices__graphics services__webdesign" id="div3">
+            <div class="services__graphics__photo"><img class="graphics__photos" src="img/aaass.jpg" alt="hidden"/></div>
+            <div class="webdesign__content">
+              <div class="webdesign__title">Lorem ipsum dolor sit amet.</div>
+              <div class="webdesign__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint aperiam adipisci <br/> vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.</div>
+              <div class="webdesign__subtitle">sdadaffreem dolor ki sit amet consecte tur adipisic ing elit. Pariatur sint aperiam adipisci <br/> vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.</div>
+            </div>
+          </div>
+          <div class="services__photography services__webdesign" id="div2">
+            <div class="srvices__photography__photo"><img class="photography__photoas" src="img/port1.jpg" alt="hidden"/></div>
+            <div class="webdesign__content">
+              <div class="webdesign__title"> enim! Earum, repellmil veniam et magnam!</div>
+              <div class="webdesign__subtitle">Lor em ips um dol or sit amet consectetur adipisicing elit. Pariatur sint aperiam adipisci <br/> vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.</div>
+            </div>
+          </div>
+          <div class="services__webdesign" id="div1">
+            <div class="webdesign__photo"><img class="services__photo" src="img/portfolio7.jpg" alt="webdisignphoto"/></div>
+            <div class="webdesign__content">
+              <div class="webdesign__title">Lorem ipsum dolor sit amet.</div>
+              <div class="webdesign__subtitle">Lorem ips  um dolor sit amet consectetur adipisicing elit. Pariatur sint aperiam adipisci <br/> vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.</div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio">
+          <div class="title"> Latest Staff of Our Projects</div>
+          <div class="portfolio__subtitle">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac,</div>
+          <div class="portfolio__img"><img class="portfolioimg1" src="img/portfolio1.jpg" alt="portfolio"/><img class="portfolioimg2" src="img/portfolio2.jpg" alt="portfolio"/><img class="portfolioimg3" src="img/portfolio3.jpg" alt="portfolio"/><img class="portfolioimg4" src="img/portfolio4.jpg" alt="portfolio"/><img class="portfolioimg5" src="img/portfolio5.jpg" alt="portfolio"/><img class="portfolioimg6" src="img/portfolio6.jpg" alt="portfolio"/></div>
+        </div>
+        <main class="blog">
+          <main class="title">Latest Blog</main>
+          <main class="blog__subtitle">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac,</main>
+          <main class="blog__content">
+            <main class="blog__content__con">
+              <main class="blog__con__date">23<br/> jan</main>
+              <main class="blog__con__content margin-bt">
+                <main class="blog__con__title">Aenean Adipiscing Etiam Vestibulum</main>
+                <main class="blog__con__subtitle">Etiam porta sem malesuada magna lorem etor mollis euismod. <br/> Cras mattis consectetur purus.</main>
+                <main class="blog__con__link"> </main><a class="link" href="#">Journal, Photography, Web Design  |  9 Comments</a>
+              </main>
+            </main>
+            <main class="blog__content__cont margin-bt ddd">
+              <main class="blog__con__date">14<br/> jan</main>
+              <main class="blog__con__content">
+                <main class="blog__con__title">Aenean Adipiscing Etiam Vestibulum</main>
+                <main class="blog__con__subtitle">Etiam porta sem malesuada magna lorem etor mollis euismod. <br/> Cras mattis consectetur purus.</main>
+                <main class="blog__con__link"> </main><a class="link" href="#">Journal, Photography, Web Design  |  9 Comments</a>
+              </main>
+            </main>
+            <main class="blog__content__con">
+              <main class="blog__con__date">12<br/> jan</main>
+              <main class="blog__con__content">
+                <main class="blog__con__title">Aenean Adipiscing Etiam Vestibulum</main>
+                <main class="blog__con__subtitle">Etiam porta sem malesuada magna lorem etor mollis euismod. <br/> Cras mattis consectetur purus.</main>
+                <main class="blog__con__link"> </main><a class="link" href="#">Journal, Photography, Web Design  |  9 Comments</a>
+              </main>
+            </main>
+            <main class="blog__content__cont">
+              <main class="blog__con__date">31<br/> jan</main>
+              <main class="blog__con__content">
+                <main class="blog__con__title">Aenean Adipiscing Etiam Vestibulum</main>
+                <main class="blog__con__subtitle">Etiam porta sem malesuada magna lorem etor mollis euismod. <br/> Cras mattis consectetur purus.</main>
+                <main class="blog__con__link"> </main><a class="link" href="#">Journal, Photography, Web Design  |  9 Comments</a>
+              </main>
+            </main>
+          </main>
+        </main>
+        <main class="customers">
+          <main class="title">Our Customers</main>
+          <main class="customers__subtitle">Aenean lacinia bibendum nulla sed consectetur. Vivamus augue laoreet rutrum faucibus dolor</main>
+          <main class="customers__flex__con"><img src="img/logo1.png" alt="logog"/><img src="img/logo2.png" alt="logog"/><img src="img/logo3.png" alt="logog"/><img src="img/logo4.png" alt="logog"/><img src="img/logo5.png" alt="logog"/><img src="img/logo6.png" alt="logog"/></main>
+        </main>
+      </div>
+      <footer class="footer">
+        <footer class="footer__con">
+          <footer class="footer__con">
+            <footer class="popular">
+              <footer class="footer__title">POPULAR POSTS</footer>
+              <footer class="footer__subtitle">Vivamus sagittis lacus vel augue <br/> laoreet rutrum dolor auctor.</footer>
+              <footer class="footer__date">14 nov 2012</footer>
+              <footer class="footer__subtitle">Scelerisque nisl consectetur et</footer>
+              <footer class="footer__date">22 may,2012</footer>
+              <footer class="footer__subtitle">Pellentesque ornare sem lacinia<br/> quam venenatis vestibulum. Fusce</footer>
+              <footer class="footer__date">15 july,2012</footer>
+            </footer>
+            <footer class="twitter">
+              <footer class="footer__title">TWITTER</footer>
+              <footer class="footer__subtitle margin">Praesent commodo cursus<br/> magna Morbi leo risus nulla<br/> consectetur. - <a class="footer__link" href="#">24 hours ago</a></footer>
+              <footer class="footer__subtitle margin">Praesent commodo cursus<br/> magna Morbi leo risus nulla<br/> consectetur. - <a class="footer__link" href="#">2 days ago</a></footer>
+              <footer class="footer__subtitle margin">Donec ullamcorper nulla non<br/> metus auctor. -<a class="footer__link" href="#">3 days ago</a></footer>
+            </footer>
+          </footer>
+          <footer class="footer__con">
+            <footer class="about">
+              <footer class="footer__title">A LITTLE ABOUT ME</footer>
+              <footer class="footer__subtitle margin">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Duis<br/> mollis, est non commodo luctus, nisi<br/> erat porttitor ligula, eget lacinia odio<br/> sem nec elit.</footer>
+              <footer class="footer__subtitle">Donec id elit non porta gravida at<br/> eget metus. Nullam quis risus eget<br/> urna mollis ornare vel.</footer>
+            </footer>
+            <footer class="form">
+              <footer class="footer__title">CONTACT FORM</footer>
+              <input class="footer__form" id="fname" type="text" name="fname"/>
+              <input class="footer__form back" id="fname" type="text" name="fname"/>
+              <textarea class="textarea" name="message"></textarea>
+              <button class="form__btn">submit</button>
+            </footer>
+          </footer>
+        </footer>
+      </footer>
+      <footer class="footer__bottom">
+        <footer class="footer__bottom__con">
+          <footer class="bottom__text">© 2011 Ikaros. Theme by <a class="footer__bottom__link" href="#">elemis</a></footer>
+          <footer class="bottom__icons"><img class="icons" src="img/icon1.png" alt="icons"/><img class="icons" src="img/icon2.png" alt="icons"/><img class="icons" src="img/icon3.png" alt="icons"/><img class="icons" src="img/icon4.png" alt="icons"/><img class="icons" src="img/icon5.png" alt="icons"/><img class="icons" src="img/icon6.png" alt="icons"/></footer>
+        </footer>
+      </footer>
+    </div>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

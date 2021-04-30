@@ -1,0 +1,866 @@
+/*swiper*/
+@font-face 
+  font-family: "swiper-icons"
+  src: url("data:application/font-woffcharset=utf-8base64, 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") format("woff")
+  font-weight: 400
+  font-style: normal
+
+:root 
+  --swiper-theme-color: #007aff
+
+.swiper-container 
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  overflow: hidden
+  list-style: none
+  padding: 0
+  /* Fix of Webkit flickering */
+  z-index: 1
+
+
+.swiper-container-vertical > .swiper-wrapper 
+  flex-direction: column
+
+.slider__imgg
+  max-width: 100%
+.swiper-wrapper 
+  position: relative
+  width: 100%
+  height: 100%
+  z-index: 1
+  display: flex
+  transition-property: transform
+  box-sizing: content-box
+
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper 
+  transform: translate3d(0px, 0, 0)
+
+
+.swiper-container-multirow > .swiper-wrapper 
+  flex-wrap: wrap
+
+
+.swiper-container-multirow-column > .swiper-wrapper 
+  flex-wrap: wrap
+  flex-direction: column
+
+
+.swiper-container-free-mode > .swiper-wrapper 
+  transition-timing-function: ease-out
+  margin: 0 auto
+
+
+.swiper-slide 
+  flex-shrink: 0
+  min-width: 100%
+  min-height: 450px
+  height: 100%
+  position: relative
+  transition-property: transform
+  
+
+
+.swiper-slide-invisible-blank 
+  visibility: hidden
+
+
+/* Auto Height */
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide 
+  height: auto
+
+.swiper-container-autoheight .swiper-wrapper 
+  align-items: flex-start
+  transition-property: transform, height
+
+
+/* 3D Effects */
+.swiper-container-3d 
+  perspective: 1200px
+
+.swiper-container-3d .swiper-wrapper,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-cube-shadow 
+  transform-style: preserve-3d
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom 
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
+  z-index: 10
+
+.swiper-container-3d .swiper-slide-shadow-left 
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
+
+.swiper-container-3d .swiper-slide-shadow-right 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
+
+.swiper-container-3d .swiper-slide-shadow-top 
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
+
+.swiper-container-3d .swiper-slide-shadow-bottom 
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
+
+
+/* CSS Mode */
+.swiper-container-css-mode > .swiper-wrapper 
+  overflow: auto
+  scrollbar-width: none
+  /* For Firefox */
+  -ms-overflow-style: none
+  /* For Internet Explorer and Edge */
+
+.swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar 
+  display: none
+
+.swiper-container-css-mode > .swiper-wrapper > .swiper-slide 
+  scroll-snap-align: start start
+
+
+.swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper 
+  scroll-snap-type: x mandatory
+
+
+.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper 
+  scroll-snap-type: y mandatory
+
+
+* 
+  box-sizing: border-box
+
+
+body 
+  max-width: 100%
+
+
+.conteiner 
+  margin: 0 auto
+  max-width: 960px
+
+
+a 
+  text-decoration: solid
+
+
+/*header*/
+ul 
+  display: flex
+  list-style-type: none
+
+
+.nav__item 
+  text-decoration: solid
+  color: #d4d4d4
+  font-weight: bold
+  font-family: "Aller Bold"
+  font-weight: normal
+  font-size: 12px
+  padding: 0 20px
+  cursor: pointer
+
+
+#menu-checkbox 
+  display: none
+
+
+.nav__item:hover 
+  color: #86acc4
+
+
+.header 
+  padding: 30px 0
+  background-color: #3a3d40
+  border-bottom: solid 6px #4a4d50
+  width: 100%
+  position: fixed
+  z-index: 9999
+  top: 0px
+
+
+.header__conteiner 
+  max-width: 960px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+
+
+.nav__item1 
+  max-width: 85px
+  text-decoration: solid
+  color: #d4d4d4
+  font-family: "Aller"
+  font-size: 12px
+  font-weight: bold
+  padding: 0 20px
+
+
+/*slider*/
+.slider 
+  margin-top: 150px
+  margin-bottom: 50px
+  height: auto
+  
+
+.slider .swiper-wrapper 
+  height: auto
+
+
+.navigation-buttons 
+  position: absolute
+  top: 50%
+  z-index: 100
+  cursor: pointer
+
+
+.swiper-button-prev 
+  left: 10px
+
+
+.swiper-button-next 
+  right: 10px
+
+
+/*services*/
+.hidden__photo 
+  display: none
+
+
+.sevices__ss 
+  display: none
+
+
+.services__content 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+.services__subtitle 
+  font-family: "Aller"
+  color: #555555
+  margin-bottom: 10px
+
+
+.services__subtitle__text 
+  font-family: "Aller"
+  color: #555555
+  margin-bottom: 40px
+
+
+.services__slider__btn 
+  text-align: center
+
+
+.services__slider__input 
+  color: #555555
+  font-size: 13px
+  font-family: "Aller Bold"
+  border: solid 1px #d7d7d7
+  display: inline-block
+  padding: 1rem 2rem
+  border: 1px solid #ccc
+  box-sizing: border-box
+  cursor: pointer
+
+
+.services__slider__input:hover 
+  background-color: #a1aba3
+  border-bottom: none
+
+
+#div1 
+  display: flex
+
+
+#div2 
+  display: none
+
+
+#div3 
+  display: none
+
+
+.services__btn 
+  display: flex
+
+
+.graphics__photos 
+  margin-right: 30px
+
+
+.photography__photoas 
+  margin-right: 30px
+
+
+.sevices__graphics 
+  padding-top: 30px
+
+
+.services__photography 
+  padding-top: 30px
+
+
+.services 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 100px
+
+
+.services__webdesign 
+  display: flex
+  font-family: "Droid Sans"
+  padding-top: 30px
+  border-top: solid 1px #d7d7d7
+  color: #555555
+  font-size: 13px
+
+
+.webdesign__photo 
+  margin-right: 30px
+
+
+.webdesign__title 
+  margin-bottom: 15px
+  font-family: "Aller Bold"
+  font-size: 17px
+  color: #555555
+
+
+.webdesign__subtitle 
+  font-size: 17px
+
+
+/*portfolio*/
+.title 
+  font-family: "Aller Bold"
+  color: #555555
+  font-size: 30px
+  margin-bottom: 30px
+  text-align: center
+
+
+.portfolio__subtitle 
+  color: #555555
+  font-family: "Aller"
+  font-size: 20px
+  margin-bottom: 30px
+  text-align: center
+
+
+.portfolio 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+.portfolio__img 
+  margin-bottom: 100px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 12px
+
+  @media screen and (max-width: 1000px)
+    grid-template-columns: repeat(auto-fill, minmax(250px, 312px))
+    justify-content: center
+
+
+  /*blog*/
+
+
+.blog 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 100px
+
+
+.margin-bt 
+  margin-bottom: 40px
+
+
+.blog__subtitle 
+  font-family: "Aller"
+  font-size: 20px
+  color: #555555
+
+
+.blog__subtitle 
+  text-align: center
+  margin: 20px
+
+
+.blog__con__date 
+  width: 55px
+  height: 55px
+  border-radius: 28px
+  background-color: #ececec
+  font-size: 22px
+  letter-spacing: 0px
+  line-height: 14px
+  color: #555555
+  font-family: "Aller"
+  text-align: center
+  padding-top: 13px
+  margin-right: 10px
+
+
+.blog__con__title 
+  font-family: "Aller Bold"
+  font-size: 17px
+  color: #555555
+  line-height: 30px
+
+
+.blog__con__subtitle 
+  font-size: 13px
+  line-height: 22px
+  color: #555555
+  font-family: "Droid Sans"
+  margin-bottom: 14px
+
+
+.blog__content__con 
+  display: flex
+  margin-right: 60px
+
+
+.link 
+  font-size: 11px
+  color: #6b99b6
+  text-decoration: solid
+
+
+.blog__content 
+  display: flex
+  flex-wrap: wrap
+
+
+.blog__content__cont 
+  display: flex
+
+
+.blog__subtitle__text 
+  font-family: "Aller"
+  font-size: 20px
+  color: #555555
+  margin-bottom: 30px
+
+
+/*customers*/
+.customers__subtitle 
+  font-size: 20px
+  line-height: 28px
+  color: #555555
+  font-family: "Aller"
+  margin-bottom: 50px
+  text-align: center
+
+
+.customers 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 50px
+
+
+.customers__flex__con 
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  width: auto
+  height: auto
+
+
+.customers__icon 
+  display: flex
+
+
+.icon__formobile 
+  display: flex
+
+
+.icon__wrap 
+  margin-right: 30px
+
+
+.icon__wrap1 
+  padding-top: 25px
+
+
+/*footer*/
+.footer 
+  background-color: #3a3d40
+  max-width: 100%
+
+.footer .footer__con 
+  max-width: 960px
+  margin: 0 auto
+  display: flex
+
+@media screen and (max-width: 992px) 
+  .footer .footer__con 
+    flex-wrap: wrap
+  .logo
+    margin-left: 30px
+  
+
+.footer .footer__con .footer__title 
+  font-size: 14px
+  line-height: 22px
+  color: #e3e3e3
+  font-family: "Aller"
+  margin-bottom: 20px
+  margin-top: 34px
+
+.footer .footer__con .footer__subtitle 
+  font-size: 13px
+  line-height: 22px
+  color: #bfbfbf
+  font-family: "Droid Sans"
+  margin-bottom: 18px
+
+.footer .footer__con .footer__date 
+  font-size: 11px
+  line-height: 25px
+  color: #899096
+  font-family: "Droid Sans"
+  margin-bottom: 30px
+
+.footer .footer__con .popular 
+  margin-right: 45px
+
+.footer .footer__con .footer__link 
+  text-decoration: solid
+  font-size: 13px
+  line-height: 25px
+  color: #86acc4
+
+.footer .footer__con .about 
+  margin-right: 45px
+
+.footer .footer__con .margin 
+  margin-bottom: 30px
+
+.footer .footer__con .twitter 
+  margin-right: 45px
+
+.footer .footer__con .footer__form 
+  height: 35px
+  max-width: 219px
+  background-color: #282b2d
+  border: none 0px
+  color: #ffffff
+
+.footer .footer__con .back 
+  background-color: #2d3032
+  margin-top: 10px
+  margin-bottom: 10px
+
+.footer .footer__con .textarea 
+  background-color: #2d3032
+  height: 140px
+  border: none 0px
+  margin-bottom: 10px
+  color: #ffffff
+
+.footer .footer__con .form 
+  display: flex
+  flex-direction: column
+
+.footer .footer__con .form__btn 
+  font-size: 13px
+  line-height: 25px
+  color: #ffffff
+  background-color: #658295
+  border: none 0px
+  font-family: "Droid Sans"
+  max-width: 110px
+  height: 30px
+  cursor: pointer
+
+.footer__bottom__con 
+  max-width: 960px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+
+
+.footer__bottom 
+  background-color: #2f3235
+  padding-top: 28px
+
+
+.bottom__text 
+  margin-bottom: 28px
+  color: #bfbfbf
+  font-size: 13px
+  font-family: "Droid Sans"
+
+
+.footer__bottom__link 
+  text-decoration: solid
+  color: #86acc4
+
+
+.icons 
+  margin-right: 6px
+@media screen and ( max-width: 955px  )
+    .portfolioimg3
+        margin-right: 12px
+    .portfolio__img
+        justify-content: center
+@media screen and ( max-width: 925px  )
+    .blog__content
+        justify-content: center
+    .blog__content__con
+        margin: 0
+    .blog__content__cont
+        margin: 0
+    .margin-bt
+        margin: 0
+
+@media screen and (max-width: 620px) 
+  .header-conteiner 
+    max-width: 100%
+    display: flex
+    justify-content: space-around
+  
+
+  .main-menu 
+    display: none
+  
+
+  .nav__item 
+    max-width: 100%
+    display: block
+    font-size: 25px
+  
+
+  .main-menu a 
+    padding: 8px
+    display: block
+  
+
+  .toggle-button 
+    text-align: center
+    display: block
+    cursor: pointer
+    color: #ffffff
+    font-size: 30px
+    font-family: "Aller Bold"
+    margin-right: 20px
+  
+
+  .toggle-button::after 
+    content: attr(data-open)
+    display: block
+  
+
+  #menu-checkbox:checked + nav[role=navigation] .main-menu 
+    display: block
+  
+
+  #menu-checkbox:checked + nav[role=navigation] .toggle-button:after 
+    content: attr(data-close)
+  
+
+  .header-conteiner a 
+    margin-right: -65px
+  
+
+  .main-menu 
+    position: relative
+  
+
+  .main-menu 
+    position: relative
+    top: 10px
+    right: 100px
+  
+
+  .services__photo 
+    max-width: 100%
+    margin: 0 auto
+  
+
+  .webdesign__photo 
+    max-width: 800px
+    margin: 0 auto
+  
+
+  .webdesign__title 
+    text-align: center
+    margin-top: 10px
+  
+
+  .title 
+    font-size: 40px
+  
+
+  .services__content 
+    max-width: 800px
+  
+
+  .sevices__ss 
+    display: block
+    font-size: 25px
+    font-family: "Aller Bold"
+    color: #555555
+    text-align: center
+    margin-bottom: 20px
+  
+
+  .services__subtitle__text 
+    display: none
+  
+
+  .portfolio__subtitle 
+    font-family: "Aller Bold"
+  
+
+  .logo__img 
+    max-height: 55px
+  
+
+  .photography__photoas 
+    margin: 0 auto
+  
+
+  .srvices__photography__photo 
+    max-width: 800px
+    margin: 0 auto
+  
+
+  .services__graphics__photo 
+    max-width: 800px
+    margin: 0 auto
+  
+
+  .services__webdesign 
+    flex-direction: column
+  
+
+  .webdesign__title 
+    font-size: 25px
+  
+
+  .webdesign__subtitle 
+    font-size: 20px
+    text-align: center
+  
+
+  .blog__content 
+    display: block
+  
+
+  .blog__content__con 
+    margin: 0px 0px 50px 0px
+    justify-content: center
+  
+
+  .blog__content__cont 
+    margin: 0px 0px 50px 0px
+  
+
+  .blog__con__subtitle 
+    font-size: 18px
+  
+
+  .margin-bt 
+    margin-bottom: 0px
+  
+
+  .ddd 
+    margin-bottom: 50px
+  
+
+  .icon__wrap1 
+    margin-right: 80px
+  
+
+  .customers__icon 
+    margin-bottom: 50px
+  
+
+  .icon__wrap 
+    margin-right: 80px
+  
+
+  .no__margin 
+    margin-right: 0px
+  
+
+  .footer__con 
+    flex-direction: column
+  
+
+  .footer__con1 
+    justify-content: center
+  
+
+  .footer__con2 
+    justify-content: center
+  
+
+  .footer__bottom__con 
+    justify-content: center
+  
+
+  .bottom__text 
+    margin-right: 100px
+  
+
+  .graphics__photos 
+    margin: 0 auto
+  
+
+  .portfolioimg1 
+    margin: 0 0 12px 0
+  
+
+  .portfolioimg2 
+    margin: 0 0 12px 0
+  
+
+  .portfolioimg3 
+    margin: 0 0 12px 0
+  
+
+  .portfolioimg4 
+    margin: 0 0 12px 0
+  
+
+  .portfolioimg5 
+    margin: 0 0 12px 0
+  
+
+  .portfolioimg6 
+    margin: 0 0 12px 0
+  
+
+  .portfolio__img 
+    justify-content: center
+
+      
+      
+  
+

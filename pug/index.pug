@@ -1,0 +1,232 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='css/normalize.css')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='fonts/aller/ALLER.css')
+    link(rel='stylesheet' href='fonts/droid/droid.css')
+    title Document
+  body
+    .wrapper
+      header.header
+        header.header__conteiner
+          header.logo
+            img.logo__img(src='img/logo.png' alt='logo' data-open='sll' oneclick='oneclick')
+          input#menu-checkbox(type='checkbox')
+          nav(role='navigation')
+            label.toggle-button(for='menu-checkbox' data-open='MENU' data-close='CLOSE' onclick='onclick')
+            ul.main-menu
+              div.nav__item(onclick="scrollDownH()" href='#') HOME
+              div.nav__item(onclick="scrollDownS()" href='#') SERVICE 
+              div.nav__item(onclick="scrollDownP()" href='#') PORTFOLIO
+              div.nav__item(onclick="scrollDownB()" href='#') ABOUT     
+              div.nav__item(onclick="scrollDownB()" href='#') BLOG            
+              div.nav__item(onclick="scrollDownC()" href='#') CONTACT
+      .conteiner
+        .slider.swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img.slider__imgg(src='img/slaider.jpg' alt='slider')
+            .swiper-slide
+              img.slider__imgg(src='img/newname.jpg' alt='slider')
+          .swiper-button-prev.navigation-buttons
+            img.prev-img(src='img/Left-Arrow.png' alt='')
+          .swiper-button-next.navigation-buttons
+            img.next-img(src='img/Right-Arrow.png' alt='')
+        .services
+          .services__content
+            .title Our Services
+            .sevices__ss
+              | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit
+          .services__btn
+            button.services__slider__input(type='button' onmousedown='viewDiv()') Web Desin
+            button.services__slider__input(type='button' onmousedown='viewDif()') Photography
+            button.services__slider__input(type='button' onmousedown='viewDig()') Graphics
+          #div3.sevices__graphics.services__webdesign
+            .services__graphics__photo
+              img.graphics__photos(src='img/aaass.jpg' alt='hidden')
+            .webdesign__content
+              .webdesign__title Lorem ipsum dolor sit amet.
+              .webdesign__subtitle
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint aperiam adipisci 
+                br
+                |  vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.
+              .webdesign__subtitle
+                | sdadaffreem dolor ki sit amet consecte tur adipisic ing elit. Pariatur sint aperiam adipisci 
+                br
+                |  vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.
+          #div2.services__photography.services__webdesign
+            .srvices__photography__photo
+              img.photography__photoas(src='img/port1.jpg' alt='hidden')
+            .webdesign__content
+              .webdesign__title  enim! Earum, repellmil veniam et magnam!
+              .webdesign__subtitle
+                | Lor em ips um dol or sit amet consectetur adipisicing elit. Pariatur sint aperiam adipisci 
+                br
+                |  vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.
+          #div1.services__webdesign
+            .webdesign__photo
+              img.services__photo(src='img/portfolio7.jpg' alt='webdisignphoto')
+            .webdesign__content
+              .webdesign__title Lorem ipsum dolor sit amet.
+              .webdesign__subtitle
+                | Lorem ips  um dolor sit amet consectetur adipisicing elit. Pariatur sint aperiam adipisci 
+                br
+                |  vero aliquam nam exercitationem ut alias ratione, quibusdam possimus consequuntur impedit sunt nemo est eaque quidem natus! Doloribus neque eveniet quas quaerat eligendi.
+        .portfolio
+          .title  Latest Staff of Our Projects
+          .portfolio__subtitle
+            | Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac,
+          .portfolio__img
+            img.portfolioimg1(src='img/portfolio1.jpg' alt='portfolio')
+            img.portfolioimg2(src='img/portfolio2.jpg' alt='portfolio')
+            img.portfolioimg3(src='img/portfolio3.jpg' alt='portfolio')
+            img.portfolioimg4(src='img/portfolio4.jpg' alt='portfolio')
+            img.portfolioimg5(src='img/portfolio5.jpg' alt='portfolio')
+            img.portfolioimg6(src='img/portfolio6.jpg' alt='portfolio')
+        main.blog
+          main.title Latest Blog
+          main.blog__subtitle
+            | Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac,
+          main.blog__content
+            main.blog__content__con
+              main.blog__con__date
+                | 23
+                br
+                |  jan
+              main.blog__con__content.margin-bt
+                main.blog__con__title Aenean Adipiscing Etiam Vestibulum
+                main.blog__con__subtitle
+                  | Etiam porta sem malesuada magna lorem etor mollis euismod. 
+                  br
+                  |  Cras mattis consectetur purus.
+                main.blog__con__link  
+                a.link(href='#') Journal, Photography, Web Design  |  9 Comments
+            main.blog__content__cont.margin-bt.ddd
+              main.blog__con__date
+                | 14
+                br
+                |  jan
+              main.blog__con__content
+                main.blog__con__title Aenean Adipiscing Etiam Vestibulum
+                main.blog__con__subtitle
+                  | Etiam porta sem malesuada magna lorem etor mollis euismod. 
+                  br
+                  |  Cras mattis consectetur purus.
+                main.blog__con__link  
+                a.link(href='#') Journal, Photography, Web Design  |  9 Comments
+            main.blog__content__con
+              main.blog__con__date
+                | 12
+                br
+                |  jan
+              main.blog__con__content
+                main.blog__con__title Aenean Adipiscing Etiam Vestibulum
+                main.blog__con__subtitle
+                  | Etiam porta sem malesuada magna lorem etor mollis euismod. 
+                  br
+                  |  Cras mattis consectetur purus.
+                main.blog__con__link  
+                a.link(href='#') Journal, Photography, Web Design  |  9 Comments
+            main.blog__content__cont
+              main.blog__con__date
+                | 31
+                br
+                |  jan
+              main.blog__con__content
+                main.blog__con__title Aenean Adipiscing Etiam Vestibulum
+                main.blog__con__subtitle
+                  | Etiam porta sem malesuada magna lorem etor mollis euismod. 
+                  br
+                  |  Cras mattis consectetur purus.
+                main.blog__con__link  
+                a.link(href='#') Journal, Photography, Web Design  |  9 Comments
+        main.customers
+          main.title Our Customers
+          main.customers__subtitle
+            | Aenean lacinia bibendum nulla sed consectetur. Vivamus augue laoreet rutrum faucibus dolor
+          main.customers__flex__con
+            img(src='img/logo1.png' alt='logog')
+            img(src='img/logo2.png' alt='logog')
+            img(src='img/logo3.png' alt='logog')
+            img(src='img/logo4.png' alt='logog')
+            img(src='img/logo5.png' alt='logog')
+            img(src='img/logo6.png' alt='logog')
+      footer.footer
+        footer.footer__con
+          footer.footer__con
+            footer.popular
+              footer.footer__title POPULAR POSTS
+              footer.footer__subtitle
+                | Vivamus sagittis lacus vel augue 
+                br
+                |  laoreet rutrum dolor auctor.
+              footer.footer__date 14 nov 2012
+              footer.footer__subtitle Scelerisque nisl consectetur et
+              footer.footer__date 22 may,2012
+              footer.footer__subtitle
+                | Pellentesque ornare sem lacinia
+                br
+                |  quam venenatis vestibulum. Fusce
+              footer.footer__date 15 july,2012
+            footer.twitter
+              footer.footer__title TWITTER
+              footer.footer__subtitle.margin
+                | Praesent commodo cursus
+                br
+                |  magna Morbi leo risus nulla
+                br
+                |  consectetur. - 
+                a.footer__link(href='#') 24 hours ago
+              footer.footer__subtitle.margin
+                | Praesent commodo cursus
+                br
+                |  magna Morbi leo risus nulla
+                br
+                |  consectetur. - 
+                a.footer__link(href='#') 2 days ago
+              footer.footer__subtitle.margin
+                | Donec ullamcorper nulla non
+                br
+                |  metus auctor. -
+                a.footer__link(href='#') 3 days ago
+          footer.footer__con
+            footer.about
+              footer.footer__title A LITTLE ABOUT ME
+              footer.footer__subtitle.margin
+                | Lorem ipsum dolor sit amet,
+                br
+                |  consectetur adipiscing elit. Duis
+                br
+                |  mollis, est non commodo luctus, nisi
+                br
+                |  erat porttitor ligula, eget lacinia odio
+                br
+                |  sem nec elit.
+              footer.footer__subtitle
+                | Donec id elit non porta gravida at
+                br
+                |  eget metus. Nullam quis risus eget
+                br
+                |  urna mollis ornare vel.
+            footer.form
+              footer.footer__title CONTACT FORM
+              input#fname.footer__form(type='text' name='fname')
+              input#fname.footer__form.back(type='text' name='fname')
+              textarea.textarea(name='message')
+              button.form__btn submit
+      footer.footer__bottom
+        footer.footer__bottom__con
+          footer.bottom__text
+            | © 2011 Ikaros. Theme by 
+            a.footer__bottom__link(href='#') elemis
+          footer.bottom__icons
+            img.icons(src='img/icon1.png' alt='icons')
+            img.icons(src='img/icon2.png' alt='icons')
+            img.icons(src='img/icon3.png' alt='icons')
+            img.icons(src='img/icon4.png' alt='icons')
+            img.icons(src='img/icon5.png' alt='icons')
+            img.icons(src='img/icon6.png' alt='icons')
+    script(src='./node_modules/swiper/swiper-bundle.min.js')
+    script(src='js/script.js')
